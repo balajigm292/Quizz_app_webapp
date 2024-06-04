@@ -28,7 +28,6 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.m2
-          key: Quizz_app_webapp/src/main/webapp/pom.xml
           restore-keys: ${{ runner.os }}-maven
 
       - name: Build and test with Maven

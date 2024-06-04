@@ -1,4 +1,4 @@
-name: CI/CD workflow for Maven Build and Sonar Code scan
+ name: CI/CD workflow for Maven Build and Sonar Code scan
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
         java-version: '17'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn clean install -f Quizz_app_webapp/pom.xml
 
     - name: SonarQube Scan
       env:

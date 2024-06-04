@@ -21,7 +21,7 @@ jobs:
         java-version: '17'
 
     - name: Build with Maven
-      run: mvn clean install -f Quizz_app_webapp/pom.xml
+      run: mvn clean install
 
     - name: SonarQube Scan
       env:
